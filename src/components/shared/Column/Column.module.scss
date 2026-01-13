@@ -1,0 +1,49 @@
+@import "@/theme/styles.scss";
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cell {
+  flex: 1;
+  padding: 0; // Mobile first: no padding
+  
+  @include tablet-up {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.leftColumnCell {
+  padding-left: 0;
+  padding-right: 0;
+  
+  @include tablet-up {
+    padding-right: 48px;
+  }
+}
+
+.rightColumnCell {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include tablet-up {
+    padding-left: 48px;
+  }
+}
+
+.stackedTop {
+  border-bottom: none;
+  margin-bottom: 40px;
+  
+  @include tablet-up {
+    border-bottom: 1px solid $divider-color;
+    margin-bottom: 0;
+  }
+}
+
+.stackedBottom {
+  // Standard padding handled by .cell
+}

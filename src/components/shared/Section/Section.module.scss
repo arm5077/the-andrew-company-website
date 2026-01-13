@@ -1,0 +1,109 @@
+@import "@/theme/styles.scss";
+
+.section {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1250px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  width: 100%;
+  
+  @include tablet-up {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.fullHeight {
+  @include tablet-up {
+    min-height: 100dvh;
+  }
+}
+
+.rowBased {
+  flex-direction: column; // Mobile default
+  
+  @include tablet-up {
+    flex-direction: column; // Row based is still column direction for children (rows stack vertically)
+  }
+}
+
+.columnBased {
+  flex-direction: column; // Mobile default: columns stack
+  
+  @include tablet-up {
+    flex-direction: row; // Tablet+ columns sit side by side
+  }
+}
+
+.childWrapper {
+  display: flex;
+  flex-direction: column; 
+  
+  // Ensure the child component (Row or Column) fills the wrapper
+  & > * {
+    flex: 1;
+    width: 100%;
+  }
+}
+
+.rowChild {
+  width: 100%;
+  flex: 1; 
+}
+
+.rowDivider {
+  border-bottom: none;
+  margin-bottom: 40px;
+  
+  @include tablet-up {
+    border-bottom: 1px solid $divider-color;
+    margin-bottom: 0;
+  }
+
+  &.keepDivider {
+    border-bottom: 1px solid $divider-color;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+
+    @include tablet-up {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.columnChild {
+  flex: 1;
+}
+
+.columnDivider {
+  border-right: none;
+  margin-bottom: 40px;
+  
+  @include tablet-up {
+    border-right: 1px solid $divider-color;
+    margin-bottom: 0;
+  }
+
+  &.keepDivider {
+    border-bottom: 1px solid $divider-color;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+
+    @include tablet-up {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      border-right: 1px solid $divider-color;
+    }
+  }
+}
+
+.equalRows .rowChild {
+  @include tablet-up {
+    min-height: 50dvh;
+  }
+}

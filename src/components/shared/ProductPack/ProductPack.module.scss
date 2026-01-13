@@ -1,0 +1,21 @@
+@import "@/theme/styles.scss";
+
+.productPack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.label {
+  @include text-h4;
+  @include text-gradient($gradient-text-peach-blue);
+  margin: 0;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}

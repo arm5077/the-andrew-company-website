@@ -1,0 +1,71 @@
+@import "@/theme/styles.scss";
+
+.clients {
+  background-color: $background;
+  padding: 0 20px;
+  width: 100%;
+
+  @include tablet-up {
+    padding: 0 40px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: $cell-padding-desktop;
+  margin: 0 auto;
+  max-width: 1250px;
+  width: 100%;
+}
+
+.topRow {
+  padding-top: 48px;
+
+  @include tablet-up {
+    padding-top: 0;
+  }
+}
+
+.headline {
+  @include text-h2;
+  @include text-gradient($gradient-text-peach-blue);
+}
+
+.divider {
+  background-color: $divider-color;
+  height: 1px;
+  width: 100%;
+}
+
+.logoGrid {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 32px;
+  padding-bottom: 48px;
+
+  @include tablet-up {
+    gap: 69px 68px;
+  }
+}
+
+.logoLink {
+  display: block;
+  height: 28px;
+  transition: opacity 0.2s ease;
+
+  @include tablet-up {
+    height: 40px;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.logo {
+  height: 100%;
+  object-fit: contain;
+  width: auto;
+}

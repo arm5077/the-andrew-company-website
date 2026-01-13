@@ -1,0 +1,71 @@
+---
+alwaysApply: true
+---
+
+
+# McGill NextJS Project Rules
+
+## Global Rules
+- Use TypeScript for all Next.js components.
+- Never use Tailwind. Do not propose Tailwind classes or configs.
+- Include `clsx` in the project, but do not use it by default on the root element.
+- Use SCSS modules (`*.module.scss`) for all component styling.
+- Alphabetize CSS property declarations inside SCSS files.
+- Import `@/theme/styles.scss` at the top of every generated SCSS module.
+- Keep all components inside `src/components`.
+- Nested components may live inside their parent component’s folder unless they are shared; shared components go in `src/components/shared`.
+- Follow the component folder structure:  
+  `ComponentName/ComponentName.tsx` and `ComponentName/ComponentName.module.scss`.
+- Ensure a `src/theme` folder exists with:
+  - `colors.scss`
+  - `typography.scss`
+  - `layout.scss`
+  - `styles.scss`
+- When creating elements based off Figma designs, please "freelance" as little as possible. No unexpected hover animations or other improvisation, pleae.
+
+## Directory Rules
+### src/
+- Must contain `components/` and `theme/`.
+
+### src/components/
+- Every component lives in its own folder using PascalCase.
+- Shared components must be inside `src/components/shared`.
+
+### src/theme/
+- Must include the SCSS files: `colors.scss`, `typography.scss`, `layout.scss`, `styles.scss`.
+
+## Component Template
+When creating a new component, use this exact scaffold:
+
+```tsx
+import styles from "./{{component}}.module.scss";
+
+export type {{component}}Props = {
+  // add props here
+};
+
+export default function {{component}}(props: {{component}}Props) {
+  return (
+    <div className={styles.{{componentCamel}}}>
+      {/* content */}
+    </div>
+  );
+}
+```
+
+## SCSS Module Template
+Use this scaffold for SCSS modules:
+
+```scss
+@import “@/theme/styles.scss”;
+
+.{{componentCamelCase}} {
+// styles
+}
+```
+
+## Naming Conventions
+- Component folders: PascalCase
+- Component files: PascalCase
+- TS class references: camelCase
+- CSS selectors: camelCase

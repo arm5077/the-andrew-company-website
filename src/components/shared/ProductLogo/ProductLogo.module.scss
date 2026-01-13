@@ -1,0 +1,91 @@
+@import "@/theme/styles.scss";
+
+.productLogo {
+  align-items: center;
+  border: 0.658px solid $white-10;
+  border-radius: $radius-medium;
+  box-shadow: 0px 2.633px 6.583px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-shrink: 0;
+  height: 119px;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  width: 131px;
+}
+
+// Re:verb specific styles
+.reverb {
+  &::before {
+    background: rgba(0, 0, 0, 0.33);
+    border-radius: $radius-medium;
+    content: "";
+    inset: 0;
+    position: absolute;
+  }
+
+  &::after {
+    background-image: 
+      linear-gradient(87.53deg, rgb(106, 78, 77) 17.27%, rgb(66, 81, 82) 49.07%, rgb(67, 101, 85) 91.46%),
+      linear-gradient(-19.17deg, rgb(77, 80, 63) 12.04%, rgb(91, 84, 105) 42.14%, rgb(90, 111, 88) 81.28%),
+      linear-gradient(107.56deg, rgb(74, 115, 85) 0.83%, rgb(49, 48, 74) 24.95%, rgb(107, 106, 82) 68.2%);
+    border-radius: $radius-medium;
+    content: "";
+    inset: 0;
+    mix-blend-mode: overlay;
+    position: absolute;
+  }
+}
+
+.reverbContent {
+  position: relative;
+  z-index: 1;
+}
+
+.reverbText {
+  color: $white;
+  font-family: $font-family-base;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+// Sous Chef specific styles
+.souschef {
+  background: linear-gradient(180deg, #343434 0%, #1f1f1f 100%);
+}
+
+.souschefContent {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.souschefIcon {
+  font-size: 32px;
+}
+
+.souschefText {
+  color: #ff6b6b;
+  font-family: $font-family-base;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+// Bandwagon specific styles
+.bandwagon {
+  background: linear-gradient(90deg, #2f09ef 0%, #b800f0 100%);
+  justify-content: flex-end;
+  padding-right: 8px;
+}
+
+.bandwagonContent {
+  display: flex;
+}
+
+.bandwagonText {
+  color: $white;
+  font-family: $font-family-base;
+  font-size: 64px;
+  font-weight: 700;
+}

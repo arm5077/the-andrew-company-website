@@ -1,0 +1,48 @@
+@import "@/theme/styles.scss";
+
+.row {
+  display: flex;
+  width: 100%;
+  flex-direction: column; // Mobile first: column direction
+  
+  @include tablet-up {
+    flex-direction: row; // Tablet and up: row direction
+  }
+}
+
+.cell {
+  flex: 1;
+  padding: 0; // Mobile first: no padding
+  
+  @include tablet-up {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.single {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.splitLeft {
+  padding-left: 0;
+  padding-right: 0;
+  border-right: none;
+  margin-bottom: 32px;
+
+  @include tablet-up {
+    padding-right: 48px;
+    border-right: 1px solid $divider-color;
+    margin-bottom: 0;
+  }
+}
+
+.splitRight {
+  padding-left: 0;
+  padding-right: 0;
+
+  @include tablet-up {
+    padding-left: 48px;
+  }
+}

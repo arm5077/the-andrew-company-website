@@ -1,0 +1,23 @@
+$mobile-max: 768px;
+$tablet-min: 769px;
+$tablet-max: 1260px;
+$desktop-min: 1261px;
+
+// Figma Imported Variables
+$cell-padding-desktop: 48px;
+$interior-vertical-gap-desktop: 24px;
+$radius-small: 10px;
+$radius-medium: 16px;
+$radius-large: 24px;
+
+@mixin tablet-up {
+  @media (min-width: $tablet-min) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: $desktop-min) {
+    @content;
+  }
+}

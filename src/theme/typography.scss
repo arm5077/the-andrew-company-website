@@ -1,0 +1,180 @@
+// Base font settings
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@import "layout";
+
+@mixin font-base {
+  font-family: $font-family-base;
+  -webkit-font-smoothing: antialiased;
+}
+
+// Global Reset Mixin (use in globals.scss)
+@mixin global-typography {
+  body {
+    @include font-base;
+  }
+  h1, h2, h3 {
+    margin: 0;
+  }
+}
+
+// Helper Mixins
+@mixin text-gradient($gradient) {
+  background-image: $gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+// Figma Typography Styles
+
+// H1
+@mixin text-h1 {
+  @include font-base;
+  font-weight: 700;
+  // Mobile (default)
+  font-size: 60px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+
+  // Tablet
+  @include tablet-up {
+    font-size: 96px;
+    letter-spacing: -0.04em;
+  }
+
+  // Desktop
+  @include desktop-up {
+    font-size: 116px;
+    letter-spacing: -0.04em;
+  }
+}
+
+// H2 - Assuming scaling similar to H1 if not explicit
+@mixin text-h2 {
+  @include font-base;
+  font-weight: 700;
+  // Mobile
+  font-size: 48px; 
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+
+  // Tablet
+  @include tablet-up {
+    font-size: 64px;
+  }
+
+  // Desktop
+  @include desktop-up {
+    font-size: 80px;
+  }
+}
+
+// H3
+@mixin text-h3 {
+  @include font-base;
+  font-weight: 700;
+  // Mobile
+  font-size: 32px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+
+  // Tablet
+  @include tablet-up {
+    font-size: 42px;
+  }
+
+  // Desktop
+  @include desktop-up {
+    font-size: 48px;
+    line-height: 1.1;
+  }
+}
+
+// H4
+@mixin text-h4 {
+  @include font-base;
+  font-weight: 700;
+  // Mobile
+  font-size: 24px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+
+  // Tablet+
+  @include tablet-up {
+    font-size: 32px;
+  }
+}
+
+// Body Text
+@mixin text-body {
+  @include font-base;
+  font-weight: 400;
+  // Mobile
+  font-size: 20px;
+  line-height: 1.35;
+  letter-spacing: -0.04em;
+
+  // Tablet+
+  @include tablet-up {
+    font-size: 28px;
+  }
+}
+
+@mixin text-body-small {
+  @include font-base;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0;
+
+  @include tablet-up {
+    font-size: 20px;
+  }
+}
+
+// Button Text
+@mixin text-button {
+  @include font-base;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  
+  // Mobile
+  font-size: 18px;
+
+  // Tablet
+  @include tablet-up {
+    font-size: 20px;
+  }
+
+  // Desktop
+  @include desktop-up {
+    font-size: 24px;
+  }
+}
+
+@mixin text-button-small {
+  @include font-base;
+  font-weight: 400;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  
+  // Mobile
+  font-size: 14px;
+
+  // Tablet+
+  @include tablet-up {
+    font-size: 16px;
+  }
+}
+
+// Explicit Mobile Button Mixin if needed independently, 
+// though text-button handles responsive scaling now.
+@mixin text-button-mobile {
+  @include font-base;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}

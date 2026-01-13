@@ -1,0 +1,37 @@
+@import "@/theme/styles.scss";
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: $radius-small;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.text {
+  @include text-button;
+  color: $white;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.big {
+  background: transparent;
+  border: 2px solid $peach;
+  padding: 14px;
+
+  @include tablet-up {
+     padding: 16px;
+  }
+}
+
+.reverse {
+  border: none;
+  background-image: $gradient-button-reverse;
+  padding: 14px;
+
+  @include tablet-up {
+    padding: 16px;
+  }
+}
