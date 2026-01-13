@@ -45,7 +45,7 @@ function PodcastPromo() {
       <p className={styles.podcastText}>
         We co-host <strong>Product Fridays,</strong> a podcast about emerging tech, creativity, and the art of building.
       </p>
-      <Button variant="big" className={styles.subscribeButton}>
+      <Button variant="big" className={styles.subscribeButton} href="https://productfridays.com">
         Subscribe now
       </Button>
     </div>
