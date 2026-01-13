@@ -1,5 +1,7 @@
 import styles from "./Clients.module.scss";
 import Image from "next/image";
+import Section from "@/components/shared/Section/Section";
+import Row from "@/components/shared/Row/Row";
 
 type Client = {
   name: string;
@@ -63,34 +65,35 @@ const CLIENTS: Client[] = [
 export default function Clients() {
   return (
     <section className={styles.clients}>
-      <div className={styles.content}>
-        <div className={styles.topRow}>
+      <Section keepDividerOnMobile>
+        <Row position="top" cells="single">
           <h2 className={styles.headline}>
-            We’ve worked with some of the most iconic brands.
+            We&apos;ve worked with some of the most iconic brands.
           </h2>
-        </div>
-        <div className={styles.divider} />
-        <div className={styles.logoGrid}>
-          {CLIENTS.map((client) => (
-            <a
-              key={client.name}
-              href={client.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.logoLink}
-              aria-label={client.name}
-            >
-              <Image
-                src={`/logos/${client.logo}`}
-                alt={client.name}
-                width={200}
-                height={40}
-                className={styles.logo}
-              />
-            </a>
-          ))}
-        </div>
-      </div>
+        </Row>
+        <Row position="bottom" cells="single">
+          <div className={styles.logoGrid}>
+            {CLIENTS.map((client) => (
+              <a
+                key={client.name}
+                href={client.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.logoLink}
+                aria-label={client.name}
+              >
+                <Image
+                  src={`/logos/${client.logo}`}
+                  alt={client.name}
+                  width={200}
+                  height={40}
+                  className={styles.logo}
+                />
+              </a>
+            ))}
+          </div>
+        </Row>
+      </Section>
     </section>
   );
 }

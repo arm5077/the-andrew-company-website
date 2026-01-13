@@ -7,7 +7,7 @@ import ProductLogo from "@/components/shared/ProductLogo/ProductLogo";
 
 export default function ProductRoundup() {
   return (
-    <Section keepDividerOnMobile>
+    <Section keepDividerOnMobile fullHeight>
       <Column side="left" cells="single">
         <div className={styles.intro}>
           <h2 className={styles.headline}>

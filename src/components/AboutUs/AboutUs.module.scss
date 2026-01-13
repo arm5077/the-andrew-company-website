@@ -7,7 +7,7 @@
   padding-bottom: 24px;
 
   @include tablet-up {
-    padding-bottom: 0;
+    padding-bottom: inherit;
   }
 }
 

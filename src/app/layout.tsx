@@ -4,7 +4,7 @@ import "./globals.scss";
 
 export const metadata: Metadata = {
   title: "The Andrew Company",
-  description: "A product manufactory",
+  description: "We turn blank whiteboards into big things.",
 };
 
 export default function RootLayout({

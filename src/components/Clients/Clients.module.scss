@@ -2,40 +2,23 @@
 
 .clients {
   background-color: $background;
-  padding: 0 20px;
   width: 100%;
-
-  @include tablet-up {
-    padding: 0 40px;
-  }
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: $cell-padding-desktop;
-  margin: 0 auto;
-  max-width: 1250px;
-  width: 100%;
-}
-
-.topRow {
-  padding-top: 48px;
-
-  @include tablet-up {
-    padding-top: 0;
-  }
 }
 
 .headline {
   @include text-h2;
   @include text-gradient($gradient-text-peach-blue);
+  padding-top: 48px;
+
+  @include desktop-up {
+    padding-top: 80px;
+  }
 }
 
-.divider {
-  background-color: $divider-color;
-  height: 1px;
-  width: 100%;
+.logo {
+  height: 100%;
+  object-fit: contain;
+  width: auto;
 }
 
 .logoGrid {
@@ -43,10 +26,15 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px 32px;
-  padding-bottom: 48px;
+  padding-bottom: 64px;
+  padding-top: 32px;
 
   @include tablet-up {
     gap: 69px 68px;
+  }
+
+  @include desktop-up {
+    padding-bottom: 112px;
   }
 }
 
@@ -62,10 +50,4 @@
   &:hover {
     opacity: 0.7;
   }
-}
-
-.logo {
-  height: 100%;
-  object-fit: contain;
-  width: auto;
 }

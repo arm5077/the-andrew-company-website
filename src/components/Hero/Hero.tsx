@@ -10,7 +10,7 @@ export default function Hero() {
       <Row position="top" cells="single">
         <div className={styles.topRow}>
           <h1 className={styles.heroTitle}>
-            Hi, we&apos;re
+            Hi, we&rsquo;re
             <br />
             The Andrews.
           </h1>
