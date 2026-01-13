@@ -28,18 +28,21 @@ export default function Hero() {
         <div className={styles.cellContent}>
           <h3 className={styles.subTitle}>
             We create amazing products with strong opinions, like{" "}
-            <span className={styles.greenGradient}>
+            <a href="https://reverb.email" className={styles.greenGradient} target="_blank" rel="noopener noreferrer">
               Re:verb,
               an instant email digest
               of your podcasts.
-            </span>
+            </a>
           </h3>
           <Button variant="big" href="#products">See what we&apos;re cooking</Button>
         </div>
         <div className={styles.cellContent}>
           <h3 className={styles.subTitle}>
-            We also help big companies like
-            The Atlantic and startups like Till Financial build ambitious things.
+            We also help companies like{" "}
+            <a href="https://cnn.com" target="_blank" rel="noopener noreferrer">CNN</a>
+            {" "}and{" "}
+            <a href="https://washingtonpost.com" target="_blank" rel="noopener noreferrer">The Washington Post</a>
+            {" "}build ambitious things.
           </h3>
           <Button variant="big" href="#cta">Let&apos;s make something</Button>
         </div>

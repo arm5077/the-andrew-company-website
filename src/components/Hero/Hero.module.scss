@@ -52,10 +52,16 @@
   @include text-gradient($gradient-text-peach-blue);
   @include text-h3;
   margin: 0;
+
+  a {
+    text-decoration: underline;
+    text-decoration-color: $peach;
+  }
 }
 
 .greenGradient {
   @include text-gradient($gradient-text-blue-green);
+  text-decoration-color: rgb(182, 238, 178);
 }
 
 .cellContent {
