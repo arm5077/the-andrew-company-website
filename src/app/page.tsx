@@ -12,7 +12,7 @@ export default function Home() {
     <main>
       <Hero />
       <SectionDivider />
-      <VideoPromo youtubeId="svETg4pBF3o" title="Product Fridays" />
+      <VideoPromo youtubeId="svETg4pBF3o" title="Product Fridays" href="https://productfridays.com" />
       <SectionDivider />
       <ProductRoundup />
       <SectionDivider />

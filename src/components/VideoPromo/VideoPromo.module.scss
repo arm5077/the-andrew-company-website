@@ -15,11 +15,21 @@
 
 .videoContainer {
   max-width: 1440px;
+  position: relative;
   width: 100%;
 
   @include tablet-up {
     padding: 24px;
   }
+}
+
+.overlay {
+  cursor: pointer;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 .video {
