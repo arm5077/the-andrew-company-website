@@ -3,23 +3,19 @@ import Section from "../shared/Section/Section";
 import Column from "../shared/Column/Column";
 import Button from "../shared/Button/Button";
 
-export type CallToActionProps = {
-  // add props here
-};
-
 function HireUsCTA() {
   return (
     <div className={styles.hireUsCta}>
       <div className={styles.hireUsContent}>
         <h3 className={styles.hireUsHeadline}>
-          We're frankly desperate to work with you.
+          We&apos;re frankly desperate to work with you.
         </h3>
         <p className={styles.hireUsBody}>
           TKTKTK gotta write some stuff there
         </p>
       </div>
       <Button variant="reverse" className={styles.hireUsButton}>
-        Let's grab time to talk
+        Let&apos;s grab time to talk
       </Button>
     </div>
   );
@@ -40,7 +36,7 @@ function PodcastPromo() {
         </video>
       </div>
       <p className={styles.podcastText}>
-        We co-host a podcast called Product Fridays. It's a cool and you should watch and/or listen.
+        We co-host a podcast called Product Fridays. It&apos;s a cool and you should watch and/or listen.
       </p>
       <Button variant="big" className={styles.subscribeButton}>
         Subscribe
@@ -73,7 +69,7 @@ function NewsletterSignUp() {
   );
 }
 
-export default function CallToAction(props: CallToActionProps) {
+export default function CallToAction() {
   return (
     <Section>
       <Column side="left" cells="single">

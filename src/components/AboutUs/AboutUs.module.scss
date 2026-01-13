@@ -1,0 +1,65 @@
+@import "@/theme/styles.scss";
+
+.headline {
+  @include text-h2;
+  @include text-gradient($gradient-text-peach-blue);
+  margin: 0;
+  padding-bottom: 24px;
+
+  @include tablet-up {
+    padding-bottom: 0;
+  }
+}
+
+.bioWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.bioDivider {
+  background: $white-33;
+  height: 1px;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.portraitWrapper {
+  flex-shrink: 0;
+  height: 160px;
+  width: 159px;
+}
+
+.portraitPhelps {
+  border-radius: 9999px 9999px 0 9999px;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.portraitMcGill {
+  border-radius: 9999px 9999px 9999px 0;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.bioText {
+  @include text-body;
+  @include text-gradient($gradient-text-peach-blue);
+  margin: 0;
+}
+
+.namePhelps {
+  @include text-gradient($gradient-text-green-pink);
+}
+
+.nameMcGill {
+  @include text-gradient($gradient-text-purple-peach);
+}

@@ -1,0 +1,70 @@
+@import "@/theme/styles.scss";
+
+$footer-gradient: linear-gradient(166.729deg, rgb(26, 26, 26) 0.94669%, rgb(17, 17, 17) 103.8%);
+$footer-gradient-tablet: linear-gradient(161.59deg, rgb(26, 26, 26) 0.94669%, rgb(17, 17, 17) 103.8%);
+$footer-gradient-mobile: linear-gradient(134.698deg, rgb(26, 26, 26) 0.94669%, rgb(17, 17, 17) 103.8%);
+
+.footer {
+  align-items: center;
+  background-image: $footer-gradient-mobile;
+  display: flex;
+  justify-content: center;
+  margin-top: 64px;
+  padding: 32px 0;
+  width: 100%;
+
+  @include tablet-up {
+    background-image: $footer-gradient-tablet;
+    padding: 48px 0;
+  }
+
+  @include desktop-up {
+    background-image: $footer-gradient;
+    margin-top: 112px;
+    padding: 64px 0;
+  }
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  max-width: 1250px;
+  padding: 0 20px;
+  width: 100%;
+
+  @include tablet-up {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+}
+
+.faces {
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.address {
+  @include text-body-small;
+  @include text-gradient($gradient-text-peach-blue);
+  font-style: normal;
+  line-height: 1.2;
+  text-align: center;
+
+  @include tablet-up {
+    text-align: right;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-position: from-font;
+  }
+}
