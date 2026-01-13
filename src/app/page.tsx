@@ -1,3 +1,5 @@
+import AboutUs from "@/components/AboutUs/AboutUs";
+import CallToAction from "@/components/CallToAction/CallToAction";
 import Clients from "@/components/Clients/Clients";
 import Hero from "@/components/Hero/Hero";
 import ProductRoundup from "@/components/ProductRoundup/ProductRoundup";
@@ -11,6 +13,10 @@ export default function Home() {
       <ProductRoundup />
       <SectionDivider />
       <Clients />
+      <SectionDivider />
+      <AboutUs />
+      <SectionDivider />
+      <CallToAction />
     </main>
   );
 }

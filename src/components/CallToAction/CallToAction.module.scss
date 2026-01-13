@@ -1,0 +1,130 @@
+@import "@/theme/styles.scss";
+
+// HireUsCTA Card
+.hireUsCta {
+  background-image: $gradient-cta-green-purple;
+  border-radius: $radius-medium;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 40px;
+}
+
+.hireUsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hireUsHeadline {
+  @include text-h3;
+  @include text-gradient($gradient-text-dark);
+}
+
+.hireUsBody {
+  @include text-body;
+  @include text-gradient($gradient-text-dark);
+  margin: 0;
+}
+
+.hireUsButton {
+  width: 100%;
+}
+
+// PodcastPromo Card
+.podcastPromo {
+  background-image: $gradient-bg-dark;
+  border-radius: $radius-large;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  padding: 24px;
+}
+
+.videoPreview {
+  aspect-ratio: 318 / 183;
+  border-radius: $radius-large;
+  overflow: hidden;
+  width: 100%;
+}
+
+.video {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.podcastText {
+  @include text-body;
+  @include text-gradient($gradient-text-peach-blue);
+  margin: 0;
+}
+
+.subscribeButton {
+  align-self: flex-start;
+}
+
+// NewsletterSignUp Card
+.newsletterSignUp {
+  background-image: $gradient-bg-dark;
+  border-radius: $radius-medium;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  padding: 24px;
+}
+
+.newsletterText {
+  @include text-body;
+  @include text-gradient($gradient-text-peach-blue);
+  margin: 0;
+}
+
+.signUpForm {
+  border: 1px solid $peach;
+  display: flex;
+  overflow: hidden;
+}
+
+.signUpInput {
+  flex: 1;
+  min-width: 0;
+  padding: 16px;
+}
+
+.emailInput {
+  @include font-base;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 18px;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  outline: none;
+  width: 100%;
+  
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.66);
+  }
+}
+
+.submitButton {
+  align-items: center;
+  aspect-ratio: 1;
+  background: transparent;
+  border: none;
+  border-left: 1px solid #555;
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  height: 52px;
+  justify-content: center;
+  padding: 10px;
+  width: 52px;
+}
