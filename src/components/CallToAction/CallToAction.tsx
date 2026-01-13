@@ -75,7 +75,7 @@ function NewsletterSignUp() {
 
 export default function CallToAction() {
   return (
-    <Section>
+    <Section id="cta">
       <Column side="left" cells="single">
         <HireUsCTA />
       </Column>

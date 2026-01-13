@@ -34,14 +34,14 @@ export default function Hero() {
               of your podcasts.
             </span>
           </h3>
-          <Button variant="big">See what we’re cooking</Button>
+          <Button variant="big" href="#products">See what we&apos;re cooking</Button>
         </div>
         <div className={styles.cellContent}>
           <h3 className={styles.subTitle}>
             We also help big companies like
             The Atlantic and startups like Till Financial build ambitious things.
           </h3>
-          <Button variant="big">Let’s make something</Button>
+          <Button variant="big" href="#cta">Let&apos;s make something</Button>
         </div>
       </Row>
     </Section>

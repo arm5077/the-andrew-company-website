@@ -7,11 +7,12 @@ import Column from '../Column/Column';
 export type SectionProps = {
   equalRows?: boolean;
   fullHeight?: boolean;
+  id?: string;
   keepDividerOnMobile?: boolean;
   children: ReactNode;
 };
 
-export default function Section({ equalRows = false, fullHeight = false, keepDividerOnMobile = false, children }: SectionProps) {
+export default function Section({ equalRows = false, fullHeight = false, id, keepDividerOnMobile = false, children }: SectionProps) {
   const childrenArray = React.Children.toArray(children);
   
   if (childrenArray.length !== 2) {
@@ -38,12 +39,15 @@ export default function Section({ equalRows = false, fullHeight = false, keepDiv
   const isRowBased = isRow1;
 
   return (
-    <div className={clsx(
-      styles.section,
-      isRowBased ? styles.rowBased : styles.columnBased,
-      equalRows && isRowBased && styles.equalRows,
-      fullHeight && styles.fullHeight
-    )}>
+    <div 
+      id={id}
+      className={clsx(
+        styles.section,
+        isRowBased ? styles.rowBased : styles.columnBased,
+        equalRows && isRowBased && styles.equalRows,
+        fullHeight && styles.fullHeight
+      )}
+    >
       <div className={clsx(
         styles.childWrapper,
         isRowBased ? [styles.rowChild, styles.rowDivider] : [styles.columnChild, styles.columnDivider],
