@@ -11,11 +11,8 @@ export default function ProductRoundup() {
       <Column side="left" cells="single">
         <div className={styles.intro}>
           <h2 className={styles.headline}>
-            We have opinions. So do our products.
+            Our products have opinions.
           </h2>
-          <p className={styles.subheadline}>
-            TKTKTK gotta write some stuff there
-          </p>
         </div>
       </Column>
       <Column side="right" cells="single">
@@ -25,19 +22,21 @@ export default function ProductRoundup() {
               logo={<ProductLogo product="reverb" />}
               description="Smart summaries of podcasts, instantly delivered to your inbox"
               buttonText="Free to use"
-              buttonHref="#"
+              buttonHref="https://reverb.email"
             />
           </ProductPack>
           <ProductPack label="Coming soon">
             <ProductPromo
               logo={<ProductLogo product="souschef" />}
-              description="TKTK"
-              buttonText="Free to use"
+              description="Turn an entire dinner party into a single, easy-to-follow recipe"
+              buttonText="Private beta"
+              buttonHref="https://souschef.cool"
             />
             <ProductPromo
               logo={<ProductLogo product="bandwagon" />}
-              description="TKTK"
-              buttonText="Free to use"
+              description="Level up your group chats with AI."
+              buttonText="Private beta"
+              buttonHref="https://bandwagon.chat"
             />
           </ProductPack>
         </div>

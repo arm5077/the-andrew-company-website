@@ -1,13 +1,50 @@
 @import "@/theme/styles.scss";
 
+.topRow {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  padding: 64px 0 0 0;
+  width: 100%;
+
+  @include tablet-up {
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: flex-start;
+    padding: 48px 0;
+  }
+}
+
 .heroTitle {
   @include text-h1;
   @include text-gradient($gradient-text-peach-blue);
-  padding: 64px 0 0 0;
   margin: 0;
+}
+
+.faces {
+  flex-shrink: 0;
+  height: 143px;
+  order: -1;
+  width: 154px;
 
   @include tablet-up {
-    padding: 48px 0;
+    height: 163px;
+    order: 0;
+    width: 175px;
+  }
+
+  @include desktop-up {
+    height: 253px;
+    width: 272px;
+  }
+
+  img {
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
   }
 }
 

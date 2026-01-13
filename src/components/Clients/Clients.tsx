@@ -66,7 +66,7 @@ export default function Clients() {
       <div className={styles.content}>
         <div className={styles.topRow}>
           <h2 className={styles.headline}>
-            Gaze upon the majesty of the brands we've graced with our presence
+            We’ve worked with some of the most iconic brands.
           </h2>
         </div>
         <div className={styles.divider} />

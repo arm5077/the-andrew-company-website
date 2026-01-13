@@ -2,16 +2,27 @@ import styles from "./Hero.module.scss";
 import Section from "../shared/Section/Section";
 import Row from "../shared/Row/Row";
 import Button from "../shared/Button/Button";
+import Image from "next/image";
 
 export default function Hero() {
   return (
     <Section equalRows fullHeight keepDividerOnMobile>
       <Row position="top" cells="single">
-        <h1 className={styles.heroTitle}>
-          Hi, we’re
-          <br />
-          The Andrews.
-        </h1>
+        <div className={styles.topRow}>
+          <h1 className={styles.heroTitle}>
+            Hi, we&apos;re
+            <br />
+            The Andrews.
+          </h1>
+          <div className={styles.faces}>
+            <Image
+              src="/portraits/faces.svg"
+              alt="Phelps and McGill faces"
+              width={272}
+              height={253}
+            />
+          </div>
+        </div>
       </Row>
       <Row position="bottom" cells="split">
         <div className={styles.cellContent}>

@@ -8,10 +8,10 @@ function HireUsCTA() {
     <div className={styles.hireUsCta}>
       <div className={styles.hireUsContent}>
         <h3 className={styles.hireUsHeadline}>
-          We&apos;re frankly desperate to work with you.
+          We’re excited to work with you!
         </h3>
         <p className={styles.hireUsBody}>
-          TKTKTK gotta write some stuff there
+          Need to start starting? We can help you move from blank whiteboard to 1.0 in 12 weeks.
         </p>
       </div>
       <Button variant="reverse" className={styles.hireUsButton}>
@@ -36,10 +36,10 @@ function PodcastPromo() {
         </video>
       </div>
       <p className={styles.podcastText}>
-        We co-host a podcast called Product Fridays. It&apos;s a cool and you should watch and/or listen.
+        We co-host <strong>Product Fridays,</strong> a podcast about emerging tech, creativity, and the art of building.
       </p>
       <Button variant="big" className={styles.subscribeButton}>
-        Subscribe
+        Subscribe now
       </Button>
     </div>
   );
@@ -49,7 +49,7 @@ function NewsletterSignUp() {
   return (
     <div className={styles.newsletterSignUp}>
       <p className={styles.newsletterText}>
-        We also send updates on product launches, new projects and collaborations, and occasional sneak peaks.
+        We also send updates on product launches, new projects and collaborations, and occasional sneak peeks.
       </p>
       <div className={styles.signUpForm}>
         <div className={styles.signUpInput}>

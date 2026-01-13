@@ -8,11 +8,7 @@ export default function AboutUs() {
     <Section>
       <Column side="left" cells="single">
         <h2 className={styles.headline}>
-          Sirs?
-          <br />
-          Excuse me.
-          <br />
-          Who are you?
+          Who are you guys again?
         </h2>
       </Column>
       <Column side="right" cells="stacked">
