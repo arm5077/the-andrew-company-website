@@ -14,7 +14,11 @@ function HireUsCTA() {
           Need to start starting? We can help you move from blank whiteboard to 1.0 in 12 weeks.
         </p>
       </div>
-      <Button variant="reverse" className={styles.hireUsButton}>
+      <Button 
+        variant="reverse" 
+        className={styles.hireUsButton}
+        href="https://calendly.com/andrew-mcgill-meeting/introductory-call"
+      >
         Let&apos;s grab time to talk
       </Button>
     </div>
