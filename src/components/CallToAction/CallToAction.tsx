@@ -11,7 +11,7 @@ function HireUsCTA() {
     <div className={styles.hireUsCta}>
       <div className={styles.hireUsContent}>
         <h3 className={styles.hireUsHeadline}>
-          We&apos;re excited to work with you!
+          We&rsquo;re excited to work with you!
         </h3>
         <p className={styles.hireUsBody}>
           Need to start starting? We can help you move from blank whiteboard to 1.0 in 12 weeks.
@@ -22,7 +22,7 @@ function HireUsCTA() {
         className={styles.hireUsButton}
         href="https://calendly.com/andrew-mcgill-meeting/introductory-call"
       >
-        Let&apos;s grab time to talk
+        Let&rsquo;s grab time to talk
       </Button>
     </div>
   );

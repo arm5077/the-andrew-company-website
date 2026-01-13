@@ -34,7 +34,7 @@ export default function Hero() {
               of your podcasts.
             </a>
           </h3>
-          <Button variant="big" href="#products">See what we&apos;re cooking</Button>
+          <Button variant="big" href="#products">See what we&rsquo;re cooking</Button>
         </div>
         <div className={styles.cellContent}>
           <h3 className={styles.subTitle}>
@@ -44,7 +44,7 @@ export default function Hero() {
             <a href="https://washingtonpost.com" target="_blank" rel="noopener noreferrer">The Washington Post</a>
             {" "}build ambitious things.
           </h3>
-          <Button variant="big" href="#cta">Let&apos;s make something</Button>
+          <Button variant="big" href="#cta">Let&rsquo;s make something</Button>
         </div>
       </Row>
     </Section>
