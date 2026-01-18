@@ -52,7 +52,7 @@ function PodcastPromo() {
   );
 }
 
-const MAILCHIMP_URL = "https://company.us6.list-manage.com/subscribe/post-json?u=dcb70aa77ebb2a6b322891213&id=cb9e733e44&f_id=00a22fe3f0";
+const MAILCHIMP_URL = "https://company.us13.list-manage.com/subscribe/post-json?u=3ea4b51d8d1e228345c985fcb&id=2773e7a08c&f_id=00bbb1e5f0";
 
 function NewsletterSignUp() {
   const [email, setEmail] = useState("");
@@ -92,7 +92,7 @@ function NewsletterSignUp() {
       // Create and inject script tag
       const script = document.createElement("script");
       script.id = callbackName;
-      script.src = `${MAILCHIMP_URL}&EMAIL=${encodeURIComponent(email)}&c=${callbackName}`;
+      script.src = `${MAILCHIMP_URL}&EMAIL=${encodeURIComponent(email)}&tags=7079674&c=${callbackName}`;
       document.body.appendChild(script);
       
       script.onerror = () => {
