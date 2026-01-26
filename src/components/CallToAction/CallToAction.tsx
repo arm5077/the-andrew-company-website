@@ -20,7 +20,7 @@ function HireUsCTA() {
       <Button 
         variant="reverse" 
         className={styles.hireUsButton}
-        href="https://calendly.com/andrew-mcgill-meeting/introductory-call"
+        href="https://calendly.com/d/cxgk-qky-skp/talk-to-the-andrews"
       >
         Let&rsquo;s grab time to talk
       </Button>
