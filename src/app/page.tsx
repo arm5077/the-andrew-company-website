@@ -14,9 +14,9 @@ export default function Home() {
       <SectionDivider />
       <VideoPromo youtubeId="svETg4pBF3o" title="Product Fridays" />
       <SectionDivider />
-      <ProductRoundup />
-      <SectionDivider />
       <Clients />
+      <SectionDivider />
+      <ProductRoundup />
       <SectionDivider />
       <AboutUs />
       <SectionDivider />
