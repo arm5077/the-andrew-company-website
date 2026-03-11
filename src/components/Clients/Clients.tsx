@@ -68,7 +68,7 @@ export default function Clients() {
       <Section keepDividerOnMobile>
         <Row position="top" cells="single">
           <h2 className={styles.headline}>
-            We&rsquo;ve worked with some of the most iconic brands.
+            We&rsquo;ve built opinionated products for iconic brands.
           </h2>
         </Row>
         <Row position="bottom" cells="single">
