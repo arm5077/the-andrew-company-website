@@ -25,9 +25,9 @@ export default function AboutUs() {
             </div>
             <p className={styles.bioText}>
               <span className={styles.namePhelps}>Andrew Phelps</span> dropped out
-              of high school to make websites. He got a college degree (thanks
-              mom), caught the journalism bug, launched products at The New York
-              Times, and led teams at Apple and The Atlantic.
+              of high school to make websites. He eventually got a college degree (thanks
+              mom), caught the journalism bug, and launched products at The New York
+              Times, The Atlantic, and Apple.
             </p>
           </div>
         </div>
