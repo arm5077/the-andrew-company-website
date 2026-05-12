@@ -1,7 +1,6 @@
 import styles from "./Hero.module.scss";
 import Section from "../shared/Section/Section";
 import Row from "../shared/Row/Row";
-import Button from "../shared/Button/Button";
 import Image from "next/image";
 
 export default function Hero() {
@@ -12,39 +11,35 @@ export default function Hero() {
           <h1 className={styles.heroTitle}>
             Hi, we&rsquo;re
             <br />
-            The Andrews.
+            The&nbsp;Andrews.
           </h1>
           <div className={styles.faces}>
             <Image
               src="/portraits/faces.svg"
               alt="Phelps and McGill faces"
-              width={272}
-              height={253}
+              width={190}
+              height={177}
             />
           </div>
         </div>
       </Row>
-      <Row position="bottom" cells="split">
-        <div className={styles.cellContent}>
-          <h3 className={styles.subTitle}>
-            We create amazing products with strong opinions, like{" "}
-            <a href="https://reverb.email" className={styles.greenGradient} target="_blank" rel="noopener noreferrer">
-              Re:verb,
-              an instant email digest
-              of your podcasts.
-            </a>
+      <Row position="bottom" cells="single">
+        <div className={styles.bottomCell}>
+          <h3 className={styles.tagline}>
+            We turn big ideas into
+            <br />
+            the <span className={styles.taglineAccent}>next big thing.</span>
           </h3>
-          <Button variant="big" href="#products">See what we&rsquo;re cooking</Button>
-        </div>
-        <div className={styles.cellContent}>
-          <h3 className={styles.subTitle}>
-            We also help companies like{" "}
-            <a href="https://cnn.com" target="_blank" rel="noopener noreferrer">CNN</a>
-            {" "}and{" "}
-            <a href="https://washingtonpost.com" target="_blank" rel="noopener noreferrer">The Washington Post</a>
-            {" "}build ambitious things.
-          </h3>
-          <Button variant="big" href="#cta">Let&rsquo;s make something</Button>
+          <div className={styles.scrollHint} aria-hidden="true">
+            <span>Learn more</span>
+            <Image
+              src="/chevron.svg"
+              alt=""
+              width={12}
+              height={9}
+              className={styles.chevron}
+            />
+          </div>
         </div>
       </Row>
     </Section>
