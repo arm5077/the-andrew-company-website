@@ -10,11 +10,15 @@
   width: 100%;
 
   @include tablet-up {
-    align-items: flex-end;
+    align-items: center;
     flex-direction: row;
-    gap: 80px;
+    gap: 32px;
     justify-content: flex-start;
     padding: 48px 0;
+  }
+
+  @include desktop-up {
+    gap: 80px;
   }
 }
 
@@ -37,8 +41,8 @@
   }
 
   @include desktop-up {
-    height: 253px;
-    width: 272px;
+    height: 177px;
+    width: 190px;
   }
 
   img {
@@ -48,30 +52,69 @@
   }
 }
 
-.subTitle {
-  @include text-gradient($gradient-text-peach-blue);
-  @include text-h3;
-  margin: 0;
+.bottomCell {
+  display: flex;
+  flex-direction: column;
 
-  a {
-    text-decoration: underline;
-    text-decoration-color: $peach;
+  @include tablet-up {
+    height: 100%;
+    justify-content: space-between;
   }
 }
 
-.greenGradient {
-  @include text-gradient($gradient-text-blue-green);
-  text-decoration-color: rgb(182, 238, 178);
-}
-
-.cellContent {
-  align-items: flex-start;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  justify-content: flex-start;
+.tagline {
+  @include font-base;
+  color: $white;
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 1.05;
+  margin: 0;
 
   @include tablet-up {
-    gap: 40px;
+    font-size: 60px;
+  }
+
+  @include desktop-up {
+    font-size: 77px;
+  }
+}
+
+.taglineAccent {
+  @include text-gradient($gradient-text-blue-green);
+}
+
+.scrollHint {
+  @include font-base;
+  align-items: center;
+  color: $white;
+  display: none;
+  font-size: 18px;
+  font-weight: 400;
+  gap: 10px;
+  letter-spacing: -0.02em;
+
+  @include tablet-up {
+    display: inline-flex;
+  }
+}
+
+.chevron {
+  animation: chevronBounce 1.2s ease-in-out infinite;
+  height: auto;
+  width: 14px;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
+}
+
+@keyframes chevronBounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(4px);
   }
 }
