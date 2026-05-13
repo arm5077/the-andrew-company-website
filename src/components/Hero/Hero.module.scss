@@ -80,6 +80,14 @@
   }
 }
 
+.taglineBreak {
+  display: none;
+
+  @include tablet-up {
+    display: inline;
+  }
+}
+
 .taglineAccent {
   @include text-gradient($gradient-text-blue-green);
 }

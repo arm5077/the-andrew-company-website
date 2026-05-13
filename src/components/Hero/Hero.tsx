@@ -27,7 +27,8 @@ export default function Hero() {
         <div className={styles.bottomCell}>
           <h3 className={styles.tagline}>
             We turn big ideas into
-            <br />
+            {' '}
+            <br className={styles.taglineBreak} />
             the <span className={styles.taglineAccent}>next big thing.</span>
           </h3>
           <div className={styles.scrollHint} aria-hidden="true">
